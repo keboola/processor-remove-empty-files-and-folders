@@ -1,4 +1,6 @@
 {
+    "name": "keboola/processor-vacuum",
+    "description": "Deletes all empty files and folders.",
     "require": {
         "php": "^7.1",
         "keboola/php-component": "^4.1"

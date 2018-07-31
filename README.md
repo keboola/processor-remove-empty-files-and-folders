@@ -1,20 +1,34 @@
-# my-component
+# processor-vacuum
 
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.com/keboola/my-component.svg?branch=master)](https://travis-ci.com/keboola/my-component)
+=======
+[![Build Status](https://travis-ci.com/keboola/processor-vacuum.svg?branch=master)](https://travis-ci.com/keboola/processor-vacuum)
+>>>>>>> 587be26... init
 
-> Fill in description
+Deletes all empty files and folders.
 
 # Usage
 
-> fill in usage instructions
+## Sample configurations
+
+Default parameters:
+
+```
+{  
+    "definition": {
+        "component": "keboola.processor-vacuum"
+    }
+}
+```
 
 ## Development
  
 Clone this repository and init the workspace with following command:
 
 ```
-git clone https://github.com/keboola/my-component
-cd my-component
+git clone https://github.com/keboola/processor-vacuum
+processor-vacuum
 docker-compose build
 docker-compose run --rm dev composer install --no-scripts
 ```
