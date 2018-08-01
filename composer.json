@@ -1,6 +1,6 @@
 {
-    "name": "keboola/processor-vacuum",
-    "description": "Deletes all empty files and folders.",
+    "name": "keboola/processor-remove-empty-files-and-folders",
+    "description": "Removes all empty files and folders.",
     "require": {
         "php": "^7.1",
         "keboola/php-component": "^4.1"
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Keboola\\Processor\\Vacuum\\": "src/"
+            "Keboola\\Processor\\RemoveEmptyFilesAndFolders\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Keboola\\Processor\\Vacuum\\FunctionalTests\\": "tests/functional/",
-            "Keboola\\Processor\\Vacuum\\Tests\\": "tests/phpunit/"
+            "Keboola\\Processor\\RemoveEmptyFilesAndFolders\\FunctionalTests\\": "tests/functional/",
+            "Keboola\\Processor\\RemoveEmptyFilesAndFolders\\Tests\\": "tests/phpunit/"
         }
     },
     "scripts": {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Keboola\Component\UserException;
 use Keboola\Component\Logger;
-use Keboola\Processor\Vacuum\Component;
+use Keboola\Processor\RemoveEmptyFilesAndFolders\Component;
 
 require __DIR__ . '/../vendor/autoload.php';
 

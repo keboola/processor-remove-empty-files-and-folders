@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Keboola\Processor\Vacuum;
+namespace Keboola\Processor\RemoveEmptyFilesAndFolders;
 
 use Keboola\Component\BaseComponent;
 use Symfony\Component\Filesystem\Filesystem;

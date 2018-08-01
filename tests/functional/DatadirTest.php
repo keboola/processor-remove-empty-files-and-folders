@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Keboola\Processor\Vacuum\FunctionalTests;
+namespace Keboola\Processor\RemoveEmptyFilesAndFolders\FunctionalTests;
 
 use Keboola\DatadirTests\DatadirTestCase;
 

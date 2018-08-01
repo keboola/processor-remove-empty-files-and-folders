@@ -1,6 +1,6 @@
-# processor-vacuum
+# processor-remove-empty-files-and-folders
 
-[![Build Status](https://travis-ci.com/keboola/processor-vacuum.svg?branch=master)](https://travis-ci.com/keboola/processor-vacuum)
+[![Build Status](https://travis-ci.com/keboola/processor-remove-empty-files-and-folders.svg?branch=master)](https://travis-ci.com/keboola/processor-remove-empty-files-and-folders)
 
 Deletes all empty files and folders.
 
@@ -13,7 +13,7 @@ Default parameters:
 ```
 {  
     "definition": {
-        "component": "keboola.processor-vacuum"
+        "component": "keboola.processor-remove-empty-files-and-folders"
     }
 }
 ```
