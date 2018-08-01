@@ -27,7 +27,7 @@ class Component extends BaseComponent
         foreach ($finder->in($source)->files() as $file) {
             if ($file->getSize() !== 0) {
                 $fs->mkdir($destination . "/" . $file->getRelativePath());
-                $fs->copy($file->getPathname(), $destination . "/" . $file->getRelativePathname());
+                $fs->rename($file->getPathname(), $destination . "/" . $file->getRelativePathname());
             }
         }
     }
