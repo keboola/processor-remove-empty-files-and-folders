@@ -12,21 +12,22 @@
         "phpstan/phpstan-shim": "^0.9.2",
         "phpunit/phpunit": "^7.0",
         "symfony/process": "^4.0",
-        "keboola/datadir-tests": "^1.0"
+        "keboola/datadir-tests": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "MyComponent\\": "src/"
+            "Keboola\\Processor\\Vacuum\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyComponent\\Tests\\": "tests/phpunit/"
+            "Keboola\\Processor\\Vacuum\\FunctionalTests\\": "tests/functional/",
+            "Keboola\\Processor\\Vacuum\\Tests\\": "tests/phpunit/"
         }
     },
     "scripts": {
         "tests-phpunit": "phpunit",
-        "tests-datadir": "datadir-tests",
+        "tests-datadir": "phpunit tests/functional/DatadirTest.php",
         "tests": [
             "@tests-phpunit",
             "@tests-datadir"
