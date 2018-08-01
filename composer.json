@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "MyComponent\\": "src/"
+            "Keboola\\Processor\\Vacuum\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyComponent\\Tests\\": "tests/phpunit/",
-            "MyComponent\\FunctionalTests\\": "tests/functional/"
+            "Keboola\\Processor\\Vacuum\\FunctionalTests\\": "tests/functional/",
+            "Keboola\\Processor\\Vacuum\\Tests\\": "tests/phpunit/"
         }
     },
     "scripts": {

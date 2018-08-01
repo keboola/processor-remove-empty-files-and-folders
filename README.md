@@ -1,10 +1,6 @@
 # processor-vacuum
 
-<<<<<<< HEAD
-[![Build Status](https://travis-ci.com/keboola/my-component.svg?branch=master)](https://travis-ci.com/keboola/my-component)
-=======
 [![Build Status](https://travis-ci.com/keboola/processor-vacuum.svg?branch=master)](https://travis-ci.com/keboola/processor-vacuum)
->>>>>>> 587be26... init
 
 Deletes all empty files and folders.
 
