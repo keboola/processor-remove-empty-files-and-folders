@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b2dab57f56c6ef9d83f256e6d21af69",
+    "content-hash": "f1098d483808b1f95b973295a23dba66",
     "packages": [
         {
             "name": "keboola/php-component",
