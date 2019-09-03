@@ -56,20 +56,20 @@ class Component extends BaseComponent
     private function skipFileWithEmptyLines(SplFileInfo $file): bool
     {
         $handle = fopen($file->getPathname(), "rb");
-        if ($handle) {
-            while (($line = fgets($handle)) !== false) {
-                if (rtrim($line, "\r\n") !== '') {
-                    fclose($handle);
-                    return false;
-                }
-            }
-
-            fclose($handle);
-            return true;
+        if ($handle === false) {
+            throw new UserException(
+                'File "' . $file->getPathname() . '" can\'t be open.'
+            );
         }
 
-        throw new UserException(
-            'File "' . $file->getPathname() . '" can\'t be open.'
-        );
+        while (!feof($handle)) {
+            if (rtrim(fread($handle, 8192), "\r\n") !== '') {
+                fclose($handle);
+                return false;
+            }
+        }
+
+        fclose($handle);
+        return true;
     }
 }
