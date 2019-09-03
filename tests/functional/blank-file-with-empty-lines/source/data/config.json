@@ -1,3 +1,5 @@
 {
-  "parameters": {}
+  "parameters": {
+    "remove_files_with_blank_lines": true
+  }
 }

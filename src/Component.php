@@ -11,6 +11,16 @@ use Symfony\Component\Finder\SplFileInfo;
 
 class Component extends BaseComponent
 {
+    protected function getConfigClass(): string
+    {
+        return Config::class;
+    }
+
+    protected function getConfigDefinitionClass(): string
+    {
+        return ConfigDefinition::class;
+    }
+
     public function run(): void
     {
         $this->purge($this->getDataDir() . "/in/files", $this->getDataDir() . "/out/files");
