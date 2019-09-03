@@ -6,6 +6,13 @@ Deletes all empty files and folders.
 
 # Usage
 
+
+## Parameters
+
+Processor supports these optional parameters:
+
+ - `remove_files_with_whitespace` -- files containing only whitespace characters ([rtrim](https://www.php.net/manual/en/function.rtrim.php)) wil be treated as empty and removed. Default value is false.
+
 ## Sample configurations
 
 Default parameters:
@@ -16,6 +23,20 @@ Default parameters:
         "component": "keboola.processor-remove-empty-files-and-folders"
     }
 }
+```
+
+### Remove files containing only whitespaces
+
+```
+{
+    "definition": {
+        "component": "keboola.processor-decompress"
+    },
+    "parameters": {
+        "remove_files_with_whitespace": true
+    }
+}
+
 ```
 
 ## Development
