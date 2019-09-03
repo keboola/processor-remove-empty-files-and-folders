@@ -1,5 +1,5 @@
 {
   "parameters": {
-    "remove_files_with_blank_lines": true
+    "remove_files_with_whitespace": true
   }
 }

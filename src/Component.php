@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Keboola\Processor\RemoveEmptyFilesAndFolders;
 
+use Exception;
 use Keboola\Component\BaseComponent;
-use Keboola\Component\UserException;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
@@ -57,13 +57,13 @@ class Component extends BaseComponent
     {
         $handle = fopen($file->getPathname(), "rb");
         if ($handle === false) {
-            throw new UserException(
+            throw new Exception(
                 'File "' . $file->getPathname() . '" can\'t be open.'
             );
         }
 
         while (!feof($handle)) {
-            if (rtrim(fread($handle, 8192), "\r\n") !== '') {
+            if (rtrim(fread($handle, 8192)) !== '') {
                 fclose($handle);
                 return false;
             }

@@ -10,7 +10,7 @@ class Config extends \Keboola\Component\Config\BaseConfig
     {
         return $this->getValue([
             'parameters',
-            'remove_files_with_blank_lines',
+            'remove_files_with_whitespace',
         ]);
     }
 }

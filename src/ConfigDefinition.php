@@ -14,7 +14,7 @@ class ConfigDefinition extends \Keboola\Component\Config\BaseConfigDefinition
         // @formatter:off
         $parametersNode
             ->children()
-                ->booleanNode('remove_files_with_blank_lines')
+                ->booleanNode('remove_files_with_whitespace')
                     ->defaultValue(false)
                 ->end()
             ->end()
