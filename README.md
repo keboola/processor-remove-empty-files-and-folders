@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/keboola/processor-remove-empty-files-and-folders.svg?branch=master)](https://travis-ci.com/keboola/processor-remove-empty-files-and-folders)
 
-Deletes all empty files and folders.
+Deletes all empty files and folders. Processes both files (`in/files`) and tables (`in/tables`) inputs.
 
 # Usage
 
@@ -30,7 +30,7 @@ Default parameters:
 ```
 {
     "definition": {
-        "component": "keboola.processor-decompress"
+        "component": "keboola.processor-remove-empty-files-and-folders"
     },
     "parameters": {
         "remove_files_with_whitespace": true
